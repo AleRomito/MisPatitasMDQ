@@ -1,7 +1,7 @@
 console.log("El archivo visualiza-con-scroll.js ha sido cargado.");
 
 document.addEventListener("DOMContentLoaded", function() {
-    const contenedores = document.querySelectorAll('.contenedor-juego');
+    const contenedores = document.querySelectorAll('.contenedor-info');
 
     // Función para verificar la posición de los divs al hacer scroll
     function checkDivPositions() {

@@ -56,9 +56,43 @@ footer{
 .no-visible-en-movil{
     display: none;
 }
+/* ---DIV PRESENTACION DE SECCIONES--- */
+.presentacion-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .portada-secciones{
     width: 100%;
 }
+.titulos{
+    background-color: #fff;
+    color: #222;
+    width: 100%;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.titulos p{
+    margin-bottom: 5px;
+}
+.logo-marcas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 5px;
+}
+.logo-marcas img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 
 #portada_movil{
     display: grid;
@@ -151,7 +185,79 @@ footer{
     width: 100%;
 
 }
+#amigos-caninos img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+#alimentacion-canina{
+    width: 100%;
+}
+#cuidado-aseo-canino{
+    width: 100%;
+}
+#cuidado-aseo-canino img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+#entretenimiento-canino{
+    width: 100%;
+}
+#entretenimiento-canino img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 15px;
 
+}
+/* IMAGEN A TEXTO */
+
+.contenedor-juego {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.imagen-juego {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.texto-overlay-juego {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s;
+    padding: 10px;
+}
+.contenedor-juego:hover .imagen-juego {
+    opacity: 0.3; 
+}
+.contenedor-juego:hover .texto-overlay-juego {
+    opacity: 1;
+}
+/* Clase visible que se aplica cuando el div está entre los bloques 4 y 6 */
+.visible .imagen-juego {
+    opacity: 0.3;
+}
+
+.visible .texto-overlay-juego {
+    opacity: 1;
+}
+
+/* ----------------- */
 
 
 

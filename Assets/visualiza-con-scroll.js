@@ -3,40 +3,26 @@ console.log("El archivo visualiza-con-scroll.js ha sido cargado.");
 document.addEventListener("DOMContentLoaded", function() {
     const contenedores = document.querySelectorAll('.contenedor-juego');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const rect = entry.boundingClientRect;
+    // Función para verificar la posición de los divs al hacer scroll
+    function checkDivPositions() {
+        const viewportHeight = window.innerHeight;
+        const viewportCenter = viewportHeight / 2;
 
-            // Verificamos si el div está intersectando con el viewport
-            if (entry.isIntersecting) {
-                // Altura del viewport dividida en 10 bloques
-                const viewportHeight = window.innerHeight;
-                const bloqueAltura = viewportHeight / 10;
+        contenedores.forEach(contenedor => {
+            const rect = contenedor.getBoundingClientRect();
+            const divCenter = rect.top + (rect.height / 2);
 
-                // Calculamos los bloques 4 y 6
-                const bloque4 = bloqueAltura * 4;
-                const bloque6 = bloqueAltura * 6;
-
-                // Calculamos el centro del div
-                const divCenter = rect.top + (rect.height / 2);
-
-                // Si el centro del div está entre los bloques 4 y 6, lo hacemos visible
-                if (divCenter >= bloque4 && divCenter <= bloque6) {
-                    entry.target.classList.add('visible');  // Añadir clase visible
-                } else {
-                    entry.target.classList.remove('visible');  // Quitar clase visible si está fuera del rango
-                }
+            // Verificar si el centro del div está cerca del centro del viewport
+            if (divCenter >= viewportCenter - 50 && divCenter <= viewportCenter + 50) {
+                contenedor.classList.add('visible'); // Añadir clase visible
             } else {
-                // Si el div no está intersectando con el viewport, quitamos la clase visible
-                entry.target.classList.remove('visible');
+                contenedor.classList.remove('visible'); // Quitar clase visible
             }
         });
-    }, {
-        threshold: 0 // Observamos cualquier intersección, sin importar el porcentaje visible
-    });
+    }
 
-    // Observamos cada contenedor
-    contenedores.forEach(contenedor => {
-        observer.observe(contenedor);
-    });
+    // Escuchar el evento de scroll
+    window.addEventListener('scroll', checkDivPositions);
+    // Llamar la función al cargar la página para asegurar el estado inicial
+    checkDivPositions();
 });

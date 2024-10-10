@@ -92,6 +92,20 @@ footer{
     height: auto;
     border-radius: 10px;
 }
+.logo-marcas-pequenos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 5px;
+}
+.logo-marcas-pequenos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.imagen-final-seccion img{
+    width: 90%;
+}
 
 
 #portada_movil{
@@ -183,8 +197,10 @@ footer{
 /* NUESTRAS MASCOTAS */
 #nuestras-mascotas img{
     width: 100%;
-
 }
+
+/* PERROS */
+
 #amigos-caninos img{
     width: 95%;
     border-radius: 20px;
@@ -199,7 +215,7 @@ footer{
 #cuidado-aseo-canino img{
     width: 95%;
     border-radius: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #entretenimiento-canino{
     width: 100%;
@@ -207,9 +223,57 @@ footer{
 #entretenimiento-canino img{
     width: 95%;
     border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* GATOS */
+
+#amigos-felinos img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#alimentacion-felina{
+    width: 100%;
+}
+#cuidado-aseo-felino{
+    width: 100%;
+}
+#cuidado-aseo-felino img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#entretenimiento-felino{
+    width: 100%;
+}
+#entretenimiento-felino img{
+    width: 95%;
+    border-radius: 20px;
     margin-bottom: 15px;
 
 }
+
+/* PEQUEÑAS MASCOTAS */
+
+#amigos-pequenos img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#alimentacion-pequeno{
+    width: 100%;
+}
+#cuidado-entretenimiento-pequenos{
+    width: 100%;
+}
+#cuidado-entretenimiento-pequenos img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
 /* IMAGEN A TEXTO */
 
 .contenedor-info {
@@ -242,12 +306,14 @@ footer{
     transition: opacity 0.5s;
     padding: 10px;
 }
-.contenedor-info:hover .imagen-info {
+/* .contenedor-info:hover .imagen-info {
     opacity: 0.3; 
 }
 .contenedor-info:hover .texto-overlay-info {
     opacity: 1;
-}
+} */
+
+/* ------------ */
 /* Clase visible que se aplica cuando el div está entre los bloques 4 y 6 */
 .visible .imagen-info {
     opacity: 0.3;

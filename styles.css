@@ -274,6 +274,24 @@ footer{
     margin-bottom: 10px;
 }
 
+/* ALIMENTOS */
+
+#alimentos-por-tipo-mascota{
+    width: 100%;
+}
+#alimentos-por-tipo-mascota img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#alimentos-por-tipo-mascota p{
+    font-size: 2rem;
+}
+#alimentos-mascotas-felices img{
+    width: 100%;
+
+}
+
 /* IMAGEN A TEXTO */
 
 .contenedor-info {

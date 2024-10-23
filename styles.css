@@ -30,6 +30,12 @@ footer{
     padding: 5px 10px 5px 10px;
     background-color: rgba(0, 0, 0);
 }
+.verM{
+    display: block;
+}
+.verP{
+    display: none;
+}
 .navegacion{
     width: 100%;
     margin: 10px 0px 10px 0px;
@@ -397,7 +403,13 @@ VISUALIZACION EN PANTALLAS GRANDES
         width: 80%;
         border-radius: 50px;
     }
-
+    .verM{
+        display: none;
+    }
+    .verP{
+        display: block;
+    }
+    
     #portada_pc{
         display: grid;
         grid-template-columns: 1fr;

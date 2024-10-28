@@ -205,6 +205,32 @@ footer{
     font-size: 1.7rem;
     color: var(--color-1)
 }
+#whatsapp-logo{
+    position: fixed;
+    z-index: 2;
+}
+#whatsapp-logo img{
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    max-width: 50px;
+    max-height: 50px;
+}
+#logos-redes{
+    display: flex;
+    justify-content: center;
+}
+#logos-redes img{
+    max-width: 60px;
+    margin: 20px;
+}
+#direccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 /* NUESTRAS MASCOTAS */
 #nuestras-mascotas img{
     width: 100%;

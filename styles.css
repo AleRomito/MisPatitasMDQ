@@ -231,9 +231,21 @@ footer{
     width: 100%;
     border-radius: 15px;
 }
-/* .producto button{
-    padding: none;
-} */
+#como-medir{
+    width: 100%;
+}
+#como-medir img{
+    max-width: 95%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+#medidas-ABC{
+    display: flex;
+}
+#medidas-ABC p{
+    margin: 3px;
+    margin-bottom: 20px;
+}
 
 /* INFO Y CONTACTOS */
 #logos-redes{

@@ -216,6 +216,26 @@ footer{
     max-width: 50px;
     max-height: 50px;
 }
+
+/* MODA -- MODA -- MODA */
+
+.categoria-producto{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+    margin: 5px;
+
+}
+.producto img{
+    width: 100%;
+    border-radius: 15px;
+}
+/* .producto button{
+    padding: none;
+} */
+
+/* INFO Y CONTACTOS */
 #logos-redes{
     display: flex;
     justify-content: center;

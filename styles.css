@@ -141,7 +141,8 @@ footer{
     align-items: center;
     display: flex;
     opacity: 0; /*Inicialmente, la imagen estará transparente*/
-    animation-delay: 2s; /* Delay de 2 segundos antes de iniciar la animación de fade-in */
+    /* animation-delay: 1s;  */
+    /* Delay de 1 segundos antes de iniciar la animación de fade-in */
     animation: fadeIn 3s ease-out 2s forwards, blink 100ms 5s 3 forwards; /* Aplicamos la animación de fade-in y parpadeo */
 }
 /* Animación de fade-in */
@@ -247,6 +248,18 @@ footer{
     margin-bottom: 20px;
 }
 
+/* ACCESORIOS -- ACCESORIOS -- ACCESORIOS */
+
+#categoria-accesorios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px 5px 40px 5px;
+}
+.tipo-acc img{
+    width: 100%;
+    border-radius: 15px;
+}
 /* INFO Y CONTACTOS */
 #logos-redes{
     display: flex;

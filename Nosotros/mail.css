@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid #dc53fe;
     background: rgb(0, 0, 0, 0.5)
   }
@@ -78,7 +78,7 @@
   .form button {
     color: #e8e8e8;
     font-size: 15px;
-    align-self: flex-start;
+    align-self: flex;
     padding: 0.6em;
     border: none;
     cursor: pointer;

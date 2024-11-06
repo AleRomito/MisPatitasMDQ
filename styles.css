@@ -262,7 +262,7 @@ footer{
 }
 .tipo-acc img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 /* INFO Y CONTACTOS */
 #logos-redes{
@@ -553,7 +553,6 @@ VISUALIZACION EN PANTALLAS GRANDES
     #nuestras-mascotas{
         display: flex;
         
-    }
-        
+    }        
     
 }

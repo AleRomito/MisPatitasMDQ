@@ -362,6 +362,9 @@ footer{
 
 /* ALIMENTOS */
 
+#alimentos-por-tipo-mascota-pc{
+    display: none;
+}
 #alimentos-por-tipo-mascota{
     width: 100%;
 }
@@ -555,4 +558,67 @@ VISUALIZACION EN PANTALLAS GRANDES
         
     }        
     
+    /* ALIMENTOS   ALIMENTOS   ALIMENTOS */
+
+    #alimentos-por-tipo-mascota-pc{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #alimentos-por-tipo-mascota-pc img{
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    #alimentos-por-tipo-mascota-pc p{
+        font-size: 2rem;
+    }
+    #alimentos-mascotas-felices img{
+        width: 100%;
+    
+    }
+    #alimentos-por-tipo-mascota{
+        display: none;
+    }
+    /* HOVER SOBRE ALIMENTOS TIPO MASCOTA EN PC */
+
+    .contenedor-info-pc {
+        position: relative;
+        /* display: inline-block; */
+      }
+      
+      .imagen-info {
+        width: 100%;
+      }
+      
+      .texto-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+        opacity: 0; /* Texto invisible por defecto */
+        transition: opacity 0.3s ease;
+      }
+      
+      .contenedor-info-pc:hover .texto-hover {
+        opacity: 1; /* El texto se hace visible cuando haces hover */
+      }
+      
+      #presentacion {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+      }
+
 }

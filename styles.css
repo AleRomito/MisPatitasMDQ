@@ -376,10 +376,31 @@ footer{
 #alimentos-por-tipo-mascota p{
     font-size: 2rem;
 }
-#alimentos-mascotas-felices img{
+
+#ppl-alimentos-por-mascota{
     width: 100%;
+}
+#ppl-alimentos-por-mascota img{
+    width: 95%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#imagen-pre-footer img {
+    position: relative;
+    width: 100%;
+    z-index: 1; 
+    display: block; 
+    margin-bottom: -7%; 
+}
+footer p{
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0;
 
 }
+
 
 /* IMAGEN A TEXTO */
 
@@ -583,6 +604,7 @@ VISUALIZACION EN PANTALLAS GRANDES
     #alimentos-por-tipo-mascota{
         display: none;
     }
+
     /* HOVER SOBRE ALIMENTOS TIPO MASCOTA EN PC */
 
     .contenedor-info-pc {
@@ -620,5 +642,49 @@ VISUALIZACION EN PANTALLAS GRANDES
         text-align: center;
         margin: 0;
       }
-
+      #alimentos-mascotas-felices{
+        width: 70%;
+        position: relative;
+    }
+    #ppl-alimentos-por-mascota{
+        width: 100%;
+    }
+    #ppl-alimentos-por-mascota img{
+        width: 60%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    #presentacion{
+        font-family: "Titan One", sans-serif;
+        font-style: italic;
+        font-size: 3rem;
+        color: var(--color-1)
+    }
+    #presentacion p{
+        margin: 0px;
+    }
+    .logo-marcas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        margin: 15px;
+        margin-bottom: 40px;
+    }
+    .logo-marcas img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .logo-marcas-pequenos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+    .logo-marcas-pequenos img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
 }

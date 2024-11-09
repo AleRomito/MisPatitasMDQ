@@ -277,7 +277,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 /* NUESTRAS MASCOTAS */
@@ -386,12 +386,33 @@ footer{
     margin-bottom: 10px;
 }
 
-#imagen-pre-footer img {
+#imagen-pre-footer-alim img {
     position: relative;
     width: 100%;
-    z-index: 1; 
-    display: block; 
-    margin-bottom: -7%; 
+    z-index: 1;
+    display: block;
+    margin-bottom: -7%;
+}
+#imagen-pre-footer-perro img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    margin-bottom: -15%;
+}
+#imagen-pre-footer-gato img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    margin-bottom: -15%;
+}
+#imagen-pre-footer-peque img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    margin-bottom: -15%;
 }
 footer p{
     position: relative;
@@ -434,12 +455,6 @@ footer p{
     transition: opacity 0.5s;
     padding: 10px;
 }
-/* .contenedor-info:hover .imagen-info {
-    opacity: 0.3; 
-}
-.contenedor-info:hover .texto-overlay-info {
-    opacity: 1;
-} */
 
 /* ------------ */
 /* Clase visible que se aplica cuando el div está entre los bloques 4 y 6 */
@@ -452,6 +467,23 @@ footer p{
 }
 
 /* ----------------- */
+
+#finAlimPeque img{
+    width: 80%;
+    position: relative;
+    margin-bottom: -10%;
+}
+#finAlimPeces img{
+    width: 100%;
+    margin-top: 20px;
+}
+.wsp-modal{
+    color: rgb(11, 150, 64);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 
 
 
@@ -508,7 +540,7 @@ VISUALIZACION EN PANTALLAS GRANDES
     .verP{
         display: block;
     }
-    
+
     #portada_pc{
         display: grid;
         grid-template-columns: 1fr;
@@ -519,8 +551,8 @@ VISUALIZACION EN PANTALLAS GRANDES
     }
     #portada_movil{
         display: none;
-    }    
-        
+    }
+
     #texto{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -576,9 +608,9 @@ VISUALIZACION EN PANTALLAS GRANDES
     }
     #nuestras-mascotas{
         display: flex;
-        
-    }        
-    
+
+    }
+
     /* ALIMENTOS   ALIMENTOS   ALIMENTOS */
 
     #alimentos-por-tipo-mascota-pc{
@@ -599,23 +631,29 @@ VISUALIZACION EN PANTALLAS GRANDES
     }
     #alimentos-mascotas-felices img{
         width: 100%;
-    
+
     }
     #alimentos-por-tipo-mascota{
         display: none;
     }
+    .contenedor-info:hover .imagen-info {
+    opacity: 0.3;
+    }
+    .contenedor-info:hover .texto-overlay-info {
+        opacity: 1;
+    }
+
 
     /* HOVER SOBRE ALIMENTOS TIPO MASCOTA EN PC */
 
     .contenedor-info-pc {
         position: relative;
-        /* display: inline-block; */
       }
-      
+
       .imagen-info {
         width: 100%;
       }
-      
+
       .texto-hover {
         position: absolute;
         top: 0;
@@ -631,11 +669,11 @@ VISUALIZACION EN PANTALLAS GRANDES
         opacity: 0; /* Texto invisible por defecto */
         transition: opacity 0.3s ease;
       }
-      
+
       .contenedor-info-pc:hover .texto-hover {
         opacity: 1; /* El texto se hace visible cuando haces hover */
       }
-      
+
       #presentacion {
         color: white;
         font-size: 24px;
@@ -678,13 +716,141 @@ VISUALIZACION EN PANTALLAS GRANDES
     .logo-marcas-pequenos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
         margin-bottom: 40px;
+        margin-top: 40px;
+        align-items: center;
+        justify-items: center;
+
     }
     .logo-marcas-pequenos img {
-        width: 100%;
+        width: 40%;
         height: auto;
         border-radius: 20px;
     }
+
+    /* MODA Y ACCESORIOS */
+
+    .presentacion-seccion img{
+        width: 50vw;
+    }
+
+    #categoria-accesorios{
+        display: flex;
+    }
+    .tipo-acc img{
+        width: 70%;
+        border-radius: 50%;
+    }
+    .categoria-producto{
+        max-width: 100%;
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        margin: 5px;
+
+    }
+    .producto img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    #como-medir{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+    #como-medir img{
+        max-width: 95%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    #medidas-ABC{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    #medidas-ABC p{
+        margin: 3px;
+        margin-bottom: 20px;
+    }
+    #carouselExampleAutoplayingPC{
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+    #carouselExampleAutoplayingPC img{
+        border-radius: 25px;
+    }
+
+    /* SECCION PERROS // GATOS  // PEQUEÑOS */
     
+    #info-amigos-pc{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .petContent{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .contenedor-info2{
+        width: 33%;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        border-radius: 20px;
+
+    }
+
+    .imagen-info {
+        width: 100%;
+        border-radius: 20px;
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .texto-overlay-info2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0; /* Inicialmente invisible */
+        transition: opacity 0.5s;
+        padding: 20px;
+    }
+    .contenedor-info2:hover .imagen-info {
+        opacity: 0.3;
+    }
+    .contenedor-info2:hover .texto-overlay-info2 {
+        opacity: 1;
+    }
+    #finAlimPeces img{
+        width: 50%;
+        border-radius: 50%;
+        margin: 20px;
+    }
+    #finAlimPeque img{
+        position: relative;
+        margin-bottom: -10%;
+
+    }
+    #finAlim img{
+        margin-top: 20px;
+    }
+    
+
+
+
+
+
+
+
 }

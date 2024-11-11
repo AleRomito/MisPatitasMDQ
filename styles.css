@@ -477,11 +477,15 @@ footer p{
     width: 100%;
     margin-top: 20px;
 }
+#finAlim img{
+    width: 70%;
+}
 .wsp-modal{
     color: rgb(11, 150, 64);
     text-decoration: none;
     font-weight: bold;
 }
+
 
 
 

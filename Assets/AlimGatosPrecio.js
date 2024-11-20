@@ -1,6 +1,10 @@
 // Función para leer el archivo Excel
 async function cargarPreciosDesdeExcel() {
-    const response = await fetch('../Assets/ListaAlimGatos.xlsx'); // Ruta al archivo Excel
+
+    // const response = await fetch('../Assets/ListaAlimGatos.xlsx');
+
+    const response = await fetch('../Assets/ListaAlimGatos.xlsx?nocache=true', {cache: 'no-store'}); // Esto indica al navegador que no debe almacenar en caché la respuesta. Ruta al archivo Excel
+
     const arrayBuffer = await response.arrayBuffer();
     const workbook = XLSX.read(arrayBuffer, { type: 'array' });
     const hoja = workbook.Sheets[workbook.SheetNames[0]]; // Obtener la primera hoja
